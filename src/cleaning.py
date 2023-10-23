@@ -231,7 +231,7 @@ def cleaningTotal(path):
     cleanFatal(df)
     cleanAge(df)
     cleanTime(df)
-    df.to_csv("C:/Users/gdcma/Ironhack/Projects/Project-I/data/df_projectI.csv", index=False)
+    df.to_csv("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/data/df_projectI.csv", index=False)
 
 
 cleaningTotal("C:/Users/gdcma/Ironhack/Projects/attacks.csv")

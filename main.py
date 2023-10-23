@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-os.chdir("C:/Users/gdcma/Ironhack/Projects/Project-I/")
+os.chdir("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/")
 from src.cleaning import cleaningTotal
 from src.visualization import visualSex
 from src.visualization import visualHistory
