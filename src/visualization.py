@@ -10,7 +10,7 @@ def visualSex(path):
     sns.set(rc={"figure.figsize": (5, 4)}, font_scale=0.75)
     sns.set_style("white")
     plt.figure()
-    sex_gral = sns.countplot(x=df["Sex"], palette="magma")
+    sex_gral = sns.countplot(x=df["Sex"])
     sex_gral.set(title = "Total attacks in men and women")
     sex_gral.bar_label(sex_gral.containers[0])
     sex_gral.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/sex_gral.jpg", dpi=1000);
@@ -36,12 +36,14 @@ def visualHistory(path):
     sns.set_style("white")
     # Attacks throughout history
     plt.figure()
-    history = sns.boxplot(y = "Year", data = df); # There is not much information about shark attacks previous to 1880
+    history = sns.boxplot(x = "Year", data = df); # There is not much information about shark attacks previous to 1880
+    history.set(title = "Total attacks throughout time")
     history.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/history.jpg", dpi=1000);
     # Attacks from 1880
     df_history = df[df["Year"] > 1880]
     plt.figure()
     history1880 = sns.histplot(data=df_history, x="Year")
+    history1880.set(title = "Total attacks throughout time from 1880")
     history1880.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/history1880.jpg", dpi=1000);
     # Deaths from 1880
     plt.figure()
@@ -95,22 +97,27 @@ def kids(path):
     # Attacks to kids throughout history
     plt.figure()
     kid_attacks = sns.histplot(data=mask_kids, x="Year");
+    kid_attacks.set(title = "Attacks suffered by children throughout time")
     kid_attacks.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/kid_attacks.jpg", dpi=1000)
     # Attacks to kids throughout history according to sex
     plt.figure()
     sexkid_attacks = sns.histplot(data=mask_kids, x="Year", hue="Sex", multiple="stack");
+    sexkid_attacks.set(title = "Attacks suffered by boys and girls throughout time")    
     sexkid_attacks.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/sexkid_attacks.jpg", dpi=1000)
     # Deaths of kids throughout history
     plt.figure()
     kid_deaths = sns.histplot(data=mask_kidsfatal, x="Year");
+    kid_deaths.set(title = "Deaths of children throughout time")    
     kid_deaths.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/kid_deaths.jpg", dpi=1000)
     # Deaths of kids throughout history according to sex
     plt.figure()
     sexkid_deaths = sns.histplot(data=mask_kidsfatal, x="Year", hue="Sex", multiple="stack");
+    sexkid_deaths.set(title = "Deaths of boys and girls throughout time")
     sexkid_deaths.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/sexkid_deaths.jpg", dpi=1000)
     #Age of the deaths throughout history
     plt.figure()
     agekid_deaths = sns.lineplot(data=mask_kidsfatal, x="Year", y="Age");
+    agekid_deaths.set(title = "Age of deaths of children throughout time")
     agekid_deaths.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/agekid_deaths.jpg", dpi=1000)
     plt.figure()
     scatteredagekid_deaths = sns.scatterplot(data=mask_kidsfatal, x="Year", y ="Age"); #Not clear, recategorise the Age
@@ -131,6 +138,7 @@ def kids(path):
     # Category of age of the attacks throughout history
     plt.figure()
     agekid_attacks = sns.histplot(data=mask_kids, x="Year", hue = "Age_categ", multiple="stack");
+    agekid_attacks.set(title = "Attacks by age category of children throughout time")
     agekid_attacks.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/agekid_attacks.jpg", dpi=1000)
     # Category of age of the deaths throughout history
     plt.figure()
@@ -154,10 +162,12 @@ def lunch(path):
     # Moment of day sharks attack the most
     plt.figure()
     lunch = df["Moment"].value_counts().plot.pie(autopct="%.1f%%"); # NaN: 1918; and not NaN: 2895
+    lunch.set(title = "Percentage of attacks by moment of day");
     lunch.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/lunch.jpg", dpi=1000)
     # Moment of day sharks attack the most according to sex
     plt.figure()
     sex_lunch = sns.countplot(x=df["Moment"], hue=df["Sex"], palette="magma");
+    sex_lunch.set(title = "Moment of day sharks attack the most according to sex");
     sex_lunch.figure.savefig("C:/Users/gdcma/Ironhack/Projects/Project-I/images/sex_lunch.jpg", dpi=1000)
     # Open images:
     os.startfile("C:/Users/gdcma/Ironhack/Projects/Project-I/images/lunch.jpg")
@@ -170,5 +180,4 @@ visualHistory("C:/Users/gdcma/Ironhack/Projects/Project-I/data/df_projectI.csv")
 visualDeathSex("C:/Users/gdcma/Ironhack/Projects/Project-I/data/df_projectI.csv")
 kids("C:/Users/gdcma/Ironhack/Projects/Project-I/data/df_projectI.csv")
 lunch("C:/Users/gdcma/Ironhack/Projects/Project-I/data/df_projectI.csv")
-
 

@@ -20,73 +20,82 @@ This code was written in Python/Jupyter Notebook, using the following libraries:
 - What is a shark's favourite meal?
 
 ## Hypotheses:
-- Men suffer more shark attacks across time
-- Men suffer more deadly shark attacks across time
-- Girls and boys suffer similarly shark attacks and related deaths.
+- Men suffer more shark attacks throughout time
+- Men suffer more deadly shark attacks throughout time
+- Girls and boys suffer similar shark attacks and related deaths.
 - Sharks prefer to attack in the morning
 
-## Men suffer more shark attacks across time:
+## Shark attacks throughout time:
+First of all, before considering shark attacks by sex or age, we take a look at the total of shark encounters, fatal or not, from the considered registries.
 
+![History](image-5.png)
 
-## Men suffer more deadly shark attacks across time
+As we can see, the events happen mostly between the end of the XIX century and the present.
+That's the reason we are going to focus on the mishaps taking place in this period, unless otherwise especified.
 
+In the next chart, we can see that the total amount of shark attacks increases over time, and presents two peaks during its progression, one the 60's and other one in the present time.
 
-## Girls and boys suffer similarly shark attacks and related deaths.
+![History_from_1880](image-6.png)
 
+## A gender issue: Shark attacks throughout time by sex
+There are overwhemingly more men who suffer shark attacks than women. 86,4% of all the attacks ever recorded have occured to a man.
 
-## Sharks prefer to attack in the morning
+![Alt text](image-10.png)
 
+We can appreciate the spike of attacks in the 60's affecting mainly men, while the spike taking place in present time shows a progressive implication in this tragedy of the female gender.
 
+![Sex_from_1880](image-9.png)
 
+### Men suffer more deadly shark attacks throughout time
+Not only men suffer more from shark attacks, but their attacks are more deadly, as shown in the following charts.
 
+![Alt text](image-12.png)
+![Alt text](image-13.png)
 
+23,4% of the attacks suffered by men are deadly, while 18,0% of the attacks suffered by women are. This difference is yet to be analysed to know if it's statistically significant.
 
+![Deaths_by_sex_1880](image-14.png)
+In this image we can appreciate the spike in deaths happening in the 60's spike of shark attacks
 
-In this first inquiry, we recieved conclusive results, albeit with some caveats. An important thing to note when looking at this data: the general reporting of shark attacks between 1900-1950 is not very thorough.
+### Girls and boys involved in shark attacks and related deaths
+We can appreciate differences between men and women, but we cannot conclude that these differences stay the same during a life time. Reckless behaivour might be a gender issue, but it can be allocated within the adult population. 
 
-Therefore, our conclusions about the nature of fatal shark attacks before 1980 should be taken with a grain of salt. That being said, the data is clear: all of the shark attacks recorded before 1920(in our dataset) were fatal, with a signficant portion of the attacks before 1980 also being fatal (but not all)
+To know if there are differences between boys and girls before toxic masculinity throws males into the sharks' arms, we look at the evolutions of attacks in children by sex.
 
-year_plot
+![Boys_girls_time](image-18.png)
 
-In the violinplot above, we can see that there are NO non-fatal attacks prior to roughlt 1930 (that were recorded). We can also see that there is a significant increase in (reported) attacks overall after 1930, with non-fatal making up the majority of the newer reported attacks
+We can see that there exist a progression of attacks in girls since 2000, but still not able to reach the number of attacks suffered by boys.
 
-year_swarm
+As for deadly attacks, we can see the spike of deaths in children during the 60's decade, proporcionately affecting girls more.
 
-The swarm chat we see here provides a little bit more detail about the ratio of fatal shark attacks per year. Here we can see that 1940 is really the cutoff date for "fatal-only" shark attacks.
+![Fatal_boys_girls_time](image-19.png)
 
-Shark attacks in the Southern Hemisphere
-This inquiry was probably the most conclusive of all my 4 hypotheses.
+### Age of children dying from shark attacks
+The following graph suggest that toddlers are not usually victims of deadly shark attacks, but the spike in the 60's seems to also have involved the death of very young kids.
 
-hemisphere_heatmap
+![Deaths_kids_time](image-21.png)
 
-In this heatmap, we can see very clearly that there is a huge difference is total number of fatal shark attacks per hemisphere, with the southern hemisphere being by far more life-threatening.
+This is more clear after recategorising the age of the children.
 
-hemisphere_bar
+![Deaths_kids_age](image-22.png)
 
-We can also see that there is a significant difference in overall total attacks; with the Northern hemisphere being largely safer than the South when we look at non-fatal attacks
+## Sharks' favourite lunch
+For sharks, breakfast is not the most important meal of the day, lunch is. Most of the shark attacks take place duering the afternoon, followed by morning
 
-Shark attacks on the West vs East Coast of the USA
-My intitial thought was that West Coast sharks would be as mellow as their land locked neighbors in California and Oregon. However, the numbers proved that my initial expectations were far from correct:
+![Meal](image-24.png)
 
-us_attack_heatmap
+Sharks don't seem to have a prefered gender for each meal.
 
-In fact, we can very clearly see two things:
+![Meal_sex](image-25.png)
 
-There is no difference in fatal shark attacks when we look at both coasts
-West Coast sharks attack more frequent overall, meaning that while you're more likely to get attacked on the west coast, you're less likely to die because of it
-us_attack_bar
-
-As we can see in this graph, the West Coast represents a much larger proportion of overall shark attacks in the US. From this data we can also see that the ratio of fatal:non-fatal attacks is WORSE in the East, meaning a East Coast shark is more likely to kill you. (this kind of proves my theory, but not really)
-
-Shark attacks in Australia have the highest chance of fatality.
-We already know that the sharks in the Southern hemisphere are way more likely to kill you. It stands to reason that sharks from Australia (also known as the country where everything wants to kill you) are more likely to be involved in fatal attacks. And the survey says....
-
-dangerous_waters
-
-The answer should come as no surprise: If you're a human and you live in Australia....leave. Interestingly, the United States has a much higher frequency of shark attacks, but the sharks take pity on American swimmers at a much higher rate than Australian sharks.
 
 ## In Conclusion
-Be glad you were born in this era, otherwise you'd probably be dead already due to shark attack
-If you live south of the Ecuator, reconsider swimming
-If you live in the US, move to the West Coast: the sharks are friendlier ;)
-If you're Australian, don't trust any sharks
+The 60's was the golden age of sharks.
+
+Men are more likely to be attacked by a shark, and also die from it.
+
+The progression in women attacks during present times, as women reclaim their place in the seas, suggests possible trend changes in the future.
+
+Boys are more prone to suffer from shark attacks than girls, but as girls also reclaim their place in the seas, it is possible to find trend changes in the future.
+
+Sharks are not early birds. They enjoy a long night of sleep, and a lunch under the sun.
