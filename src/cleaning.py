@@ -1,10 +1,14 @@
 import pandas as pd
+import os
+
+os.getcwd()
+os.chdir("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/")
 
 def csvTrabajo(path):
     df = pd.read_csv(path, encoding="unicode_escape")
     return df[["Year", "Sex ", "Fatal (Y/N)", "Age", "Time"]]
 
-df = csvTrabajo("C:/Users/gdcma/Ironhack/Projects/attacks.csv")
+df = csvTrabajo("../attacks.csv")
 
 #DUPLICATES AND NAN
 def duplicates(df):
@@ -231,7 +235,4 @@ def cleaningTotal(path):
     cleanFatal(df)
     cleanAge(df)
     cleanTime(df)
-    df.to_csv("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/data/df_projectI.csv", index=False)
-
-
-cleaningTotal("C:/Users/gdcma/Ironhack/Projects/attacks.csv")
+    df.to_csv("data/df_projectI.csv", index=False)
