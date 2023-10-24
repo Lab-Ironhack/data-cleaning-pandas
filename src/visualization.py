@@ -173,11 +173,3 @@ def lunch(path):
     os.startfile("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/images/lunch.jpg")
     os.startfile("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/images/sex_lunch.jpg")
 
-
-
-visualSex("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/data/df_projectI.csv")
-visualHistory("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/data/df_projectI.csv")
-visualDeathSex("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/data/df_projectI.csv")
-kids("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/data/df_projectI.csv")
-lunch("C:/Users/gdcma/Ironhack/Projects/data-cleaning-pandas/data/df_projectI.csv")
-
