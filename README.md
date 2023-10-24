@@ -101,4 +101,4 @@ The progression in women attacks during present times, as women reclaim their pl
 
 Boys are more prone to suffer from shark attacks than girls, but as girls also reclaim their place in the seas, it is possible to find trend changes in the future.
 
-Sharks are not early birds. They enjoy a long night of sleep, and a lunch under the sun.
+Sharks are not early birds. They enjoy a long night of quiet darkness, and a lunch under the sun.
